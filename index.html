@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page FCC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>HTML Documentation</header>
+        <a href="#HTML_Introduction" class="nav-link">HTML Introduction</a>
+        <a href="#HTML_Documents" class="nav-link">HTML Documents</a>
+        <a href="#HTML_Heading" class="nav-link">HTML Heading</a>
+        <a href="#HTML_Paragraph" class="nav-link">HTML Paragraph</a>
+        <a href="#HTML_Comments" class="nav-link">HTML Comments</a>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="HTML_Introduction">
+            <header>HTML Introduction</header>
+            <p>HTML adalah bahasa markup standar untuk membuat halaman Web.</p>
+            <p>Apa itu HTML ?</p>
+            <ul>
+                <li>HTML adalah singkatan dari Hyper Text Markup Language</li>
+                <li>HTML adalah bahasa markup standar untuk membuat halaman Web</li>
+                <li>HTML menggambarkan struktur halaman Web</li>
+                <li>HTML terdiri dari serangkaian elemen</li>
+                <li>Elemen HTML memberi tahu browser cara menampilkan konten</li>
+                <li>Elemen HTML memberi label potongan konten seperti "ini adalah judul", "ini adalah paragraf", "ini adalah tautan", dll.</li>
+            </ul>
+        </section>
+        <hr>
+        <section class="main-section" id="HTML_Documents">
+            <header>HTML Documents</header>
+            <p>Dokumen HTML Sederhana <br/>
+                Semua dokumen HTML harus dimulai dengan deklarasi tipe dokumen: &lt;!DOCTYPE html>. <br/>
+                Dokumen HTML itu sendiri dimulai dengan &lt;html> dan diakhiri dengan &lt;html>.<br/>
+                Bagian yang terlihat dari dokumen HTML adalah antara &lt;body> dan &lt;/body>.</p>
+            <code><pre>
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+&lt;title>Page Title&lt;/title>
+&lt;/head>
+&lt;body>
+                
+&lt;h1>My First Heading&lt;/h1>
+&lt;p>My first paragraph.&lt;/p>
+                
+&lt;/body>
+&lt;/html> 
+</pre></code>
+        <p>Penjelasan <br/>
+        Deklarasi <b>&lt;!DOCTYPE html></b> mendefinisikan bahwa dokumen ini adalah dokumen HTML5. Elemen <b>&lt;html></b> adalah elemen root dari halaman HTML. Elemen <b>&lt;head></b> berisi informasi meta tentang halaman HTML. Elemen <b>&lt;title></b> menentukan judul untuk halaman HTML (yang ditampilkan di bilah judul browser atau di tab halaman). Elemen <b>&lt;body></b> mendefinisikan isi dokumen, dan merupakan wadah untuk semua konten yang terlihat, seperti judul, paragraf, gambar, hyperlink, tabel, daftar, dll. Elemen <b>&lt;h1></b> mendefinisikan heading besar. Elemen <b>&lt;p></b> mendefinisikan paragraf <b>&lt;/p></b></p>
+        <p>Deklarasi &lt;!DOCTYPE html><br/>
+        Deklarasi &lt;!DOCTYPE> mewakili tipe dokumen, dan membantu browser untuk menampilkan halaman web dengan benar.<br/>
+            Itu hanya boleh muncul sekali, di bagian atas halaman (sebelum tag HTML apa pun).<br/>
+            Deklarasi &lt;!DOCTYPE> tidak peka huruf besar/kecil.</p>
+        </section>
+        <hr>
+        <section class="main-section" id="HTML_Heading">
+            <header>HTML Heading</header>
+            <p>Judul HTML didefinisikan dengan tag &lt;h1> hingga &lt;h6>.
+                &lt;h1> mendefinisikan heading yang paling penting. &lt;h6> mendefinisikan heading yang paling tidak penting, Contoh code sebagai berikut :
+            </p>
+            <code><pre>
+&lt;h1>This is heading 1&lt;/h1>
+&lt;h2>This is heading 2&lt;/h2>
+&lt;h3>This is heading 3&lt;/h3>
+&lt;h4>This is heading 4&lt;/h4>
+&lt;h5>This is heading 5&lt;/h5>
+&lt;h6>This is heading 6&lt;/h6>
+</pre></code>
+            <p>Hasil</p>
+            <h1>This is heading 1</h1>
+            <h2>This is heading 2</h2>
+            <h3>This is heading 3</h3>
+            <h4>This is heading 4</h4>
+            <h5>This is heading 5</h5>
+            <h6>This is heading 6</h6>
+        </section>
+        <hr>
+        <section class="main-section" id="HTML_Paragraph">
+            <header>HTML Paragraph</header>
+            <p>Elemen HTML &lt;p> mendefinisikan sebuah paragraf.
+                Sebuah paragraf selalu dimulai pada baris baru, dan browser secara otomatis menambahkan beberapa spasi (margin) sebelum dan sesudah paragraf.</p>
+            <code><pre>
+&lt;p>This is a paragraph.&lt;/p>
+&lt;p>This is another paragraph.&lt;/p> 
+</pre></code>
+        </section>
+        <hr>
+        <section class="main-section" id="HTML_Comments">
+            <header>HTML Comments</header>
+            <p>Komentar HTML tidak ditampilkan di browser, tetapi dapat membantu mendokumentasikan kode sumber HTML Anda. Tag comment HTML adalah sebagai berikut : <br/>
+                yaitu diantara tanda " &lt;!-- " dan " --> "
+            </p>
+            <code><pre>
+&lt;!-- Write your comments here -->
+</pre></code>
+            <p>Perhatikan bahwa ada tanda seru (!) di tag awal, tetapi tidak di tag akhir.</p>
+            <p>Dengan komentar Anda dapat menempatkan pemberitahuan dan pengingat dalam kode HTML Anda :</p>
+            <code><pre>
+&lt;!-- This is a comment -->
+
+&lt;p>This is a paragraph.&lt;/p>
+
+&lt;!-- Remember to add more information here --> 
+</pre></code>
+        <p>Komentar juga bagus untuk men-debug HTML, karena Anda dapat mengomentari baris kode HTML, satu per satu, untuk mencari kesalahan:
+        </p>
+        <code><pre>
+&lt;!-- Do not display this image at the moment
+&lt;img border="0" src="pic_trulli.jpg" alt="Trulli">
+-->
+</pre></code>
+        </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
